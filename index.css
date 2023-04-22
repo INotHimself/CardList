@@ -2,8 +2,22 @@ html, body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Rubik', sans-serif;
-	background-color: #f4f1ee;
+	/* background-color: #f4f1ee; */
+	background: linear-gradient(-45deg, #f4f1ee, #fde3c5, #f4b880, #fcb572);
+	background-size: 400% 400%;
 	user-select: none;
+	animation: animate 15s ease infinite;
+}
+@keyframes animate {
+	0%{
+		background-position: 0 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0 50%;
+	}
 }
 
 .container {
